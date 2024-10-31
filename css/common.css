@@ -61,12 +61,16 @@ body {
   }
   
   .page {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     gap: 0; 
+  }
+
+  .page.active {
+    display: flex; /* 활성화된 페이지는 flex로 표시 */
   }
   
   /* 상단 타이틀 */
@@ -246,15 +250,6 @@ body {
     color: black;
   }
 
-  /* #page2, #page3 { 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    flex-direction: column; 
-    gap: 20px; 
-  } */
-  
   /* 미디어 쿼리 기본 세팅 */
   .label-1024,
   .head-768,
@@ -446,7 +441,7 @@ body {
       justify-content: center;
       gap: 0; /* 여백 제거 */
     }
-    
+
     .step-box {
       width: 80%;
     }
