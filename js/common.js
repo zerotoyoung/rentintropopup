@@ -85,7 +85,7 @@ function submitFormWithMessage(formSelector, messageSelector) {
 
         const messageElement = document.querySelector(messageSelector);
         if (messageElement) {
-            messageElement.style.display = "block"; // 메시지 표시
+            messageElement.style.display = "flex"; // 메시지 표시
         }
 
         const formData = new FormData(event.target);
