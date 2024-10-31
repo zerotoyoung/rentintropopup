@@ -8,7 +8,7 @@ function showPage(pageNumber) {
 
   const pageElement = document.getElementById("page" + pageNumber);
   if (pageElement) {
-    pageElement.style.display = "block";
+    pageElement.style.display = "flex";
   } else {
     console.error(`페이지 ${pageNumber}를 찾을 수 없습니다.`);
   }

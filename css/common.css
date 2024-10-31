@@ -4,32 +4,29 @@ body {
     font-family: "GmarketSansMedium";
     overflow-y: hidden;
     min-height: 100vh;
-  }
-  
-  /* 라이브러리 */
-  .mb-50 {
-    margin-bottom: 50px;
-  }
-  
-  .head-yb {
-    color: #F3B81C;
-    font-weight: bold;
-  }
-  
-  /* 팝업 */
-  .form-box {
-    position: fixed;
-    z-index: 1000;
-    overflow-x: hidden;
-    overflow-y: hidden;
-  }
-  
-  /* 기본 */
-  body {
     background: #fed716;
     overflow-y: hidden;
-  }
+}
   
+/* 라이브러리 */
+.mb-50 {
+  margin-bottom: 50px;
+}
+  
+.head-yb {
+  color: #F3B81C;
+  font-weight: bold;
+}
+  
+/* 팝업 */
+.form-box {
+  position: fixed;
+  z-index: 1000;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+  
+/* 기본 */
   /* 전체 레이아웃 */
   .form-box {
     min-width: 100vw;
@@ -69,7 +66,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    gap: 0;
+    gap: 0; 
   }
   
   /* 상단 타이틀 */
@@ -249,12 +246,14 @@ body {
     color: black;
   }
 
-  .page.form-last {
+  /* #page2, #page3 { 
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-}
+    flex-direction: column; 
+    gap: 20px; 
+  } */
   
   /* 미디어 쿼리 기본 세팅 */
   .label-1024,
@@ -280,7 +279,7 @@ body {
      height: auto; /* 고정된 높이를 제거 */
     }
     
-      .form-wrap, .form-con {
+    .form-wrap, .form-con {
       width: 100%; /* 너비를 100%로 설정 */
       height: auto; /* 고정된 높이를 제거 */
     }
@@ -437,7 +436,7 @@ body {
     
     .mb-50 {
     margin-bottom: 20px;
-  }
+    }
     
     .page {
       min-height: 90vh;
