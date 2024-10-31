@@ -70,7 +70,7 @@ body {
   }
 
   .page.active {
-    display: flex; /* 활성화된 페이지는 flex로 표시 */
+    display: flex !important; /* 활성화된 페이지는 flex로 표시 */
   }
   
   /* 상단 타이틀 */
