@@ -65,7 +65,7 @@ function skipForm(pageNumber) {
 }
 
 function goToHomepage() {
-    window.location.href = "https://rencarpeople.imweb.me/";
+    window.location.href = "https://rencarpeople.imweb.me/15";
 }
 
 function submitFormWithMessage(formSelector, messageSelector) {
