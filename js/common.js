@@ -99,12 +99,12 @@ function submitFormWithMessage(formSelector, messageSelector) {
                     console.log("폼이 성공적으로 제출되었습니다.");
                 } else {
                     console.error("폼 제출에 실패했습니다.");
-                    alert("폼 제출에 실패했습니다. 다시 시도해 주세요.");
+                    // alert("폼 제출에 실패했습니다. 다시 시도해 주세요.");
                 }
             })
             .catch((error) => {
                 console.error("폼 전송 중 오류 발생:", error);
-                alert("폼 전송 중 오류가 발생했습니다. 다시 시도해 주세요.");
+                // alert("폼 전송 중 오류가 발생했습니다. 다시 시도해 주세요.");
             });
     });
 }
@@ -120,15 +120,15 @@ document.addEventListener("DOMContentLoaded", function () {
     showPage(1); // 기본적으로 #page1을 표시
     submitFormWithMessage("form", ".form-last");
 
-    const nextBtn = document.querySelector("#page2 .next-btn button");
-    if (nextBtn) {
-        nextBtn.addEventListener("click", function (event) {
-            if (!validatePageInputs()) {
-                event.preventDefault(); // 유효하지 않으면 폼 제출 방지
-                alert("모든 필드를 채워 주세요."); // 경고창 띄우기
-            }
-        });
-    }
+    // const nextBtn = document.querySelector("#page2 .next-btn button");
+    // if (nextBtn) {
+    //     nextBtn.addEventListener("click", function (event) {
+    //         if (!validatePageInputs()) {
+    //             event.preventDefault(); // 유효하지 않으면 폼 제출 방지
+    //             alert("모든 필드를 채워 주세요."); // 경고창 띄우기
+    //         }
+    //     });
+    // }
 
     adjustHeight();
 });
